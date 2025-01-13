@@ -1,41 +1,26 @@
 ![Screenshot of the app](./docs/screenshot.png)
 
-# Geometry Node Graph
+# React Vite Library Boilerplate
 
-Preview Geometry Nodes on web using React
+Create code libraries using React, Typescript, and Vite to automatically release to NPM.
+
+For example, you could create a component library for a design system (so someone can `import { ComponentName } from 'your-custom-library'`).
 
 ## Getting Started
 
-1. Clone this project: `git clone https://github.com/whoisryosuke/geometry-node-graph.git`
+### Preview the code
+
+1. Clone this project: `git clone git@github.com:whoisryosuke/react-vite-library-boilerplate.git`
 1. Install dependencies: `yarn`
 1. Start the dev server: `yarn dev`
 
-Open the app in your web browser, you should see a node graph.
+Open the app in your web browser: http://localhost:5174/
 
-## Previewing your nodes
+### Write code
 
-This app works by using JSON files with geometry node data exported from Blender using a custom plugin (TBD). But I included the WIP script below, it should work to export some basic graphs (haven't tested stuff like custom nodes, groups, etc).
+Write code in `src/` and export any components, functions, etc in the `index.ts`.
 
-1. Save your file somewhere.
-1. Select the object with the geometry nodes modifier.
-1. Go to the Scripting tab in Blender (or change one of the windows to scripting)
-1. Create a new script (click the "New" button on top of window)
-1. Paste in [the script from here](scripts/export-geometry-nodes.py)
-1. Run the script.
-1. Look inside the folder where your file is saved, you should a JSON file
-1. Copy and paste that JSON file into the `src/data/` folder of this app.
-1. Open up the `src/App.tsx` and swap your JSON filename for the one imported in there.
-1. Hard refresh the browser/app to see changes.
-
-## How it works
-
-This app uses react-flow to display the node graph. It provides a lot of nice stuff out of the box, like the zooming and panning.
-
-The nodes are generated from a JSON file that is exported from Blender using a custom Python script. It basically reads the geometry node data and creates a JSON file with the data.
-
-> Interested in learning more? [Check out my blog](https://whoisryosuke.com/blog), where I break down how this works.
-
-## Release
+### Release
 
 1. Bump version in `package.json`
 1. `yarn build`

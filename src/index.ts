@@ -1,5 +1,3 @@
-import NodeGraph from "./components/NodeGraph"
+import Stack from "./components/Stack";
 
-export {
-    NodeGraph
-}
+export { Stack };
