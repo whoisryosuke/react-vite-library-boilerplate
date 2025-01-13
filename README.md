@@ -1,5 +1,3 @@
-![Screenshot of the app](./docs/screenshot.png)
-
 # React Vite Library Boilerplate
 
 Create code libraries using React, Typescript, and Vite to automatically release to NPM.
