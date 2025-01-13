@@ -1,6 +1,6 @@
 {
-  "name": "@whoisryosuke/react-vite-library-boilerplate",
-  "version": "0.0.1",
+  "name": "react-vite-library-boilerplate",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
