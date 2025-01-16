@@ -20,6 +20,10 @@ Open the app in your web browser: http://localhost:5174/
 
 Write code in `src/` and export any components, functions, etc in the `index.ts`.
 
+**Tips:**
+
+- **Installing a package?** If you don't want to include it in the bundle, install it as a peer dependency and add it to the `vite.config.js` file and the `build.rollupOptions.external` array. You can see we do this with React - since we expect the user to bring their own copy.
+
 ### Release
 
 **First time setup**:
