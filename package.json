@@ -21,10 +21,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write src/**/*.{css,js,tsx,json}",
     "preview": "vite preview",
-    "commit": "npx cz"
+    "commit": "cz"
   },
   "dependencies": {
-    "commitizen": "^4.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.0.7"
@@ -36,6 +35,7 @@
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
+    "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
